@@ -1,8 +1,12 @@
 name: publish
 on:
-  workflow_run:
+  push:
+
+  pull_request:
     branches:
       - main
+      - stage
+      - dev
 
 jobs:
   build:
@@ -18,6 +22,6 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
 
       - name: Publish
-        run: npm publish --access public
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
