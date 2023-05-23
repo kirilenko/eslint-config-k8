@@ -45,10 +45,7 @@ const rules = {
     },
   ],
 
-  'import/no-extraneous-dependencies': [
-    'error',
-    { devDependencies: true },
-  ],
+  'import/no-extraneous-dependencies': 'off',
 
   // For local import only from fsd-index (features sliced design):
   'import/no-internal-modules': [
