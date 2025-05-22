@@ -1,0 +1,55 @@
+{
+  "name": "eslint-config-k8",
+  "version": "0.1.0",
+  "description": "ESLint config",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirilenko/eslint-config-k8.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "prettier.config.js",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@tanstack/eslint-plugin-query": "5.67.2",
+    "@typescript-eslint/eslint-plugin": "7",
+    "@typescript-eslint/parser": "7",
+    "eslint": "8",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-hooks": "^0.4.3",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-sort-keys-fix": "^1.1.2",
+    "prettier": "3",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-css-order": "^2.1.2",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "semantic-release": "^24.2.3"
+  },
+  "peerDependencies": {
+    "eslint": "8",
+    "prettier": "3"
+  },
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "setup": "[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh && nvm use && pnpm i && pnpm audit",
+    "publish": "semantic-release"
+  }
+}
