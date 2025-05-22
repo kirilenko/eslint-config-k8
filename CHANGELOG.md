@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/kirilenko/eslint-config-k8/compare/v1.0.1...v1.0.2) (2025-05-22)
+
+
+### Bug Fixes
+
+* update readme ([3f25cca](https://github.com/kirilenko/eslint-config-k8/commit/3f25ccad1d1de7ecdee29466a121c543fc27e787))
+
 ## [1.0.1](https://github.com/kirilenko/eslint-config-k8/compare/v1.0.0...v1.0.1) (2025-05-22)
 
 
