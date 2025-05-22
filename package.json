@@ -11,9 +11,12 @@
   "license": "MIT",
   "main": "index.js",
   "files": [
+    "CHANGELOG.md",
+    "README.md",
+    ".eslintrc.js",
     "index.js",
-    "prettier.config.js",
-    "README.md"
+    "package.json",
+    "prettier.config.js"
   ],
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
