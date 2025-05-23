@@ -11,11 +11,8 @@
   "license": "MIT",
   "main": "index.js",
   "files": [
-    "CHANGELOG.md",
-    "README.md",
     ".eslintrc.js",
     "index.js",
-    "package.json",
     "prettier.config.js"
   ],
   "devDependencies": {
