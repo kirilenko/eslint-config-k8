@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/kirilenko/eslint-config-k8/compare/v1.1.2...v1.1.3) (2025-05-25)
+
+
+### Bug Fixes
+
+* split absolute and relative local-imports ([6000c2f](https://github.com/kirilenko/eslint-config-k8/commit/6000c2ff691228660d9c43196704e0c9baa358a3))
+
 ## [1.1.2](https://github.com/kirilenko/eslint-config-k8/compare/v1.1.1...v1.1.2) (2025-05-25)
 
 
