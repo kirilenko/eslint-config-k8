@@ -2,7 +2,7 @@
 
 ### Usage
 
-- Require eslint v.8 and prettier v.3.
+- Required dependencies: look at the `peerDependencies` section in `package.json`.
 
 - Install the package:
 

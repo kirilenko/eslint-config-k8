@@ -10,19 +10,16 @@
   "author": "",
   "license": "MIT",
   "main": "index.js",
-  "files": [
-    ".eslintrc.js",
-    "index.js",
-    "prettier.config.js"
-  ],
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^24.2.3"
+  },
+  "peerDependencies": {
     "@tanstack/eslint-plugin-query": "5.67.2",
     "@typescript-eslint/eslint-plugin": "^8.32.1",
     "@typescript-eslint/parser": "^8.32.1",
     "eslint": "8",
-    "eslint-config-prettier": "^10.1.1",
     "eslint-plugin-hooks": "^0.4.3",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
@@ -35,14 +32,7 @@
     "prettier": "3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-css-order": "^2.1.2",
-    "prettier-plugin-tailwindcss": "^0.6.8",
-    "semantic-release": "^24.2.3"
-  },
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.32.1",
-    "@typescript-eslint/parser": "^8.32.1",
-    "eslint": "8",
-    "prettier": "3"
+    "prettier-plugin-tailwindcss": "^0.6.8"
   },
   "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39",
   "publishConfig": {
