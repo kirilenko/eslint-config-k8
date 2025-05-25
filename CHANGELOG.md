@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/kirilenko/eslint-config-k8/compare/v1.1.1...v1.1.2) (2025-05-25)
+
+
+### Bug Fixes
+
+* update peer-dependencies ([c4596eb](https://github.com/kirilenko/eslint-config-k8/commit/c4596eb44e4e9ceda95b8ce4ec27aee44181ff61))
+
 ## [1.1.1](https://github.com/kirilenko/eslint-config-k8/compare/v1.1.0...v1.1.1) (2025-05-25)
 
 
