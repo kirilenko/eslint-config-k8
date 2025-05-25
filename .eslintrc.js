@@ -113,10 +113,11 @@ const rules = {
           // Imports w/o from.
           ['^\\u0000'],
 
-          // Internal packages.
-          [
-            `^(${internalPackages})(?!${styleExtensions})`,
+          // Internal packages w/ absolute paths.
+          [`^(${internalPackages})(?!${styleExtensions})`],
 
+          // Internal packages w/ relative paths.
+          [
             // Parent imports. Put `..` last.
             '^\\.\\.(?!/?$)',
             '^\\.\\./?$',
