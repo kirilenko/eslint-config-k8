@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.0.5...v1.1.0) (2025-05-25)
+
+
+### Features
+
+* remove airbnb config ([531678c](https://github.com/kirilenko/eslint-config-k8/commit/531678cf5a81d8e96877fa65499199fd19be1cf2))
+
 ## [1.0.5](https://github.com/kirilenko/eslint-config-k8/compare/v1.0.4...v1.0.5) (2025-05-25)
 
 
