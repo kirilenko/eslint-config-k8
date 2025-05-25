@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/kirilenko/eslint-config-k8/compare/v1.0.4...v1.0.5) (2025-05-25)
+
+
+### Bug Fixes
+
+* update typescript-eslint ([20053a5](https://github.com/kirilenko/eslint-config-k8/commit/20053a5da6c629915f7bad9a66da496b103859bb))
+
 ## [1.0.4](https://github.com/kirilenko/eslint-config-k8/compare/v1.0.3...v1.0.4) (2025-05-25)
 
 
