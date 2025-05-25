@@ -25,7 +25,7 @@ const rules = {
 
   '@typescript-eslint/no-unused-expressions': 'off', // - for <condition> && <expression>
 
-  'arrow-body-style: ["error", "as-needed"]': 'off',
+  'arrow-body-style': 'off',
 
   'hooks/sort': [
     2,
@@ -154,7 +154,6 @@ module.exports = {
   parserOptions: {
     ecmaFeatures: { jsx: true },
     ecmaVersion: 'latest',
-    project: './tsconfig.json',
     sourceType: 'module',
   },
   plugins: [
