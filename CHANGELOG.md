@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.1.3...v1.2.0) (2025-06-02)
+
+
+### Features
+
+* add eslint-airbnb-config and remove prettier-plugin-astro ([621b3a8](https://github.com/kirilenko/eslint-config-k8/commit/621b3a8ec71076d18893506ef2bc697aff160012))
+
 ## [1.1.3](https://github.com/kirilenko/eslint-config-k8/compare/v1.1.2...v1.1.3) (2025-05-25)
 
 
