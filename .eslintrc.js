@@ -1,4 +1,5 @@
 const extendsDict = {
+  airbnb: ['airbnb', 'airbnb-typescript'],
   base: ['eslint:recommended'],
   prettier: ['plugin:prettier/recommended'],
   react: ['plugin:react/recommended', 'plugin:react-hooks/recommended'],
@@ -146,6 +147,7 @@ module.exports = {
     // es2022: true,
   },
   extends: [
+    ...extendsDict.airbnb,
     ...extendsDict.react,
     ...extendsDict.base,
     ...extendsDict.typescript,
