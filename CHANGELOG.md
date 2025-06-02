@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/kirilenko/eslint-config-k8/compare/v1.2.0...v1.2.1) (2025-06-02)
+
+
+### Bug Fixes
+
+* apply eslint-airbnb-config ([085c7e1](https://github.com/kirilenko/eslint-config-k8/commit/085c7e13420962b16649991762b179864131013d))
+
 # [1.2.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.1.3...v1.2.0) (2025-06-02)
 
 
