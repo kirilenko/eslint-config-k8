@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/kirilenko/eslint-config-k8/compare/v1.2.3...v1.2.4) (2025-06-11)
+
+
+### Bug Fixes
+
+* add eslint-config-prettier ([4d2ca11](https://github.com/kirilenko/eslint-config-k8/commit/4d2ca11e1156c7e6ba864ccfd09433b7826f6a1c))
+
 ## [1.2.3](https://github.com/kirilenko/eslint-config-k8/compare/v1.2.2...v1.2.3) (2025-06-11)
 
 
