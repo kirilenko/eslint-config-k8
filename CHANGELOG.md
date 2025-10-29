@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.4...v1.3.5) (2025-10-29)
+
+
+### Bug Fixes
+
+* use mjs ([3caae50](https://github.com/kirilenko/eslint-config-k8/commit/3caae50edf5236a92293693950e6e2309b9c682d))
+
 ## [1.3.4](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.3...v1.3.4) (2025-10-29)
 
 
