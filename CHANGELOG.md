@@ -1,3 +1,10 @@
+## [1.3.3](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.2...v1.3.3) (2025-10-29)
+
+
+### Bug Fixes
+
+* set module-type ([e7569ec](https://github.com/kirilenko/eslint-config-k8/commit/e7569ec3a3496f643ae19cf0ab1f7a030ff73245))
+
 ## [1.3.2](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.1...v1.3.2) (2025-10-29)
 
 
