@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "type": "module",
-  "main": "eslint.config.js",
+  "main": "eslint.config.cjs",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
