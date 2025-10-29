@@ -6,11 +6,11 @@
     "type": "git",
     "url": "git+https://github.com/kirilenko/eslint-config-k8.git"
   },
-  "keywords": [],
+  "keywords": ["eslint"],
   "author": "",
   "license": "MIT",
   "type": "module",
-  "main": "eslint.config.mjs",
+  "main": "eslint.config.js",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",

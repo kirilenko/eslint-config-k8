@@ -13,10 +13,10 @@ npm install eslint-config-k8 --save-dev
 - Add the following to your `eslint.config.cjs` file:
 
 ```js
-/** @type { import("eslint").Linter.Config } */
-module.exports = {
-  extends: ['k8'],
-}
+import { defineConfig } from 'eslint/config'
+import eslintConfigK8 from 'eslint-config-k8'
+
+export default defineConfig([{ extends: [eslintConfigK8] }])
 ```
 
 - If you want to use the `prettier` plugin, add the following to your `.eslintrc.cjs` file:
