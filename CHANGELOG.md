@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.2.4...v1.3.0) (2025-10-29)
+
+
+### Features
+
+* update eslint to v.9 ([ed05b31](https://github.com/kirilenko/eslint-config-k8/commit/ed05b318ee789bcec34bc351a94ae27b6fb7cdd9))
+
 ## [1.2.4](https://github.com/kirilenko/eslint-config-k8/compare/v1.2.3...v1.2.4) (2025-06-11)
 
 
