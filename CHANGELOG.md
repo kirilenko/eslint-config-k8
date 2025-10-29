@@ -1,3 +1,10 @@
+## [1.3.7](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.6...v1.3.7) (2025-10-29)
+
+
+### Bug Fixes
+
+* rename prettier.config ([c6e03d3](https://github.com/kirilenko/eslint-config-k8/commit/c6e03d3c9aa4c8f19a46a47e8462e17b166351a5))
+
 ## [1.3.6](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.5...v1.3.6) (2025-10-29)
 
 
