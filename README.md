@@ -24,14 +24,14 @@ export default defineConfig([{ extends: [eslintConfigK8] }])
 ```js
 /** @type {import("prettier").Config} */
 module.exports = {
-  ...require('eslint-config-k8/prettier.config'),
+  ...require('eslint-config-k8/prettier.config.cjs'),
 }
 ```
 
 - If you want to use the `prettier` w/ `tailwind` (for example), you can do it like this:
 
 ```js
-const { plugins, ...rest } = require('eslint-config-k8/prettier.config')
+const { plugins, ...rest } = require('eslint-config-k8/prettier.config.cjs')
 
 /** @type {import("prettier").Config} */
 module.exports = {
