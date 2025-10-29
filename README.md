@@ -22,7 +22,7 @@ module.exports = {
 - If you want to use the `prettier` plugin, add the following to your `.eslintrc.cjs` file:
 
 ```js
-/** @type { import("eslint").Linter.Config } */
+/** @type {import("prettier").Config} */
 module.exports = {
   ...require('eslint-config-k8/prettier.config'),
 }
