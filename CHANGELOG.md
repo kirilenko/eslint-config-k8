@@ -1,3 +1,10 @@
+## [1.3.6](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.5...v1.3.6) (2025-10-29)
+
+
+### Bug Fixes
+
+* update readme ([536e860](https://github.com/kirilenko/eslint-config-k8/commit/536e8600c4f9b2db3be770ef4fb09d3b76f62b07))
+
 ## [1.3.5](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.4...v1.3.5) (2025-10-29)
 
 
