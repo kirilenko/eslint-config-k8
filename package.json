@@ -4,7 +4,7 @@
   "description": "ESLint v.9 Config for React App",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kirilenko/lib.eslint-config-k8.git"
+    "url": "git+https://github.com/kirilenko/eslint-config-k8.git"
   },
   "keywords": [],
   "author": "",
