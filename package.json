@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "main": "index.js",
+  "main": "index.cjs",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",

@@ -10,7 +10,7 @@
 npm install eslint-config-k8 --save-dev
 ```
 
-- Add the following to your `eslint.config.js` file:
+- Add the following to your `eslint.config.cjs` file:
 
 ```js
 /** @type { import("eslint").Linter.Config } */
