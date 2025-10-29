@@ -1,3 +1,10 @@
+## [1.3.8](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.7...v1.3.8) (2025-10-29)
+
+
+### Bug Fixes
+
+* rename prettier.config to cjs ([b9eb55b](https://github.com/kirilenko/eslint-config-k8/commit/b9eb55bae6073bafdd5e43959549c5e39e9a0134))
+
 ## [1.3.7](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.6...v1.3.7) (2025-10-29)
 
 
