@@ -1,3 +1,10 @@
+## [1.3.11](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.10...v1.3.11) (2025-11-10)
+
+
+### Bug Fixes
+
+* react-hooks plugin ([843f64c](https://github.com/kirilenko/eslint-config-k8/commit/843f64c9b774bf0f346535944365faac40e92bf3))
+
 ## [1.3.10](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.9...v1.3.10) (2025-11-10)
 
 
