@@ -45,13 +45,11 @@ export default tsEslint.config([
     files: ['**/*.{ts,tsx}'],
     plugins: {
       import: pluginImport,
-      'react-hooks': pluginReactHooks,
       'react-refresh': pluginReactRefresh,
     },
     rules: {
       ...pluginImport.configs.recommended.rules,
       ...pluginImport.configs.typescript.rules,
-      ...pluginReactHooks.configs.recommended.rules,
       '@typescript-eslint/ban-ts-comment': 'error',
       '@typescript-eslint/no-base-to-string': 'error',
       '@typescript-eslint/no-empty-object-type': 'off',
