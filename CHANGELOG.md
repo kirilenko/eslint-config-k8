@@ -1,3 +1,10 @@
+## [1.3.12](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.11...v1.3.12) (2025-11-10)
+
+
+### Bug Fixes
+
+* react-refresh plugin ([49e6195](https://github.com/kirilenko/eslint-config-k8/commit/49e6195ee1e2d64c923e3af0a8e13be220ef82e9))
+
 ## [1.3.11](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.10...v1.3.11) (2025-11-10)
 
 
