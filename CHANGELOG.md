@@ -1,3 +1,10 @@
+## [1.3.10](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.9...v1.3.10) (2025-11-10)
+
+
+### Bug Fixes
+
+* update react-refresh rule ([1025201](https://github.com/kirilenko/eslint-config-k8/commit/1025201a0b9db8a22065970c98f1450ee11f3508))
+
 ## [1.3.9](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.8...v1.3.9) (2025-10-29)
 
 
