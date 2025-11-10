@@ -43,10 +43,7 @@ export default tsEslint.config([
 
   {
     files: ['**/*.{ts,tsx}'],
-    plugins: {
-      import: pluginImport,
-      'react-refresh': pluginReactRefresh,
-    },
+    plugins: { import: pluginImport },
     rules: {
       ...pluginImport.configs.recommended.rules,
       ...pluginImport.configs.typescript.rules,
