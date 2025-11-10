@@ -1,3 +1,10 @@
+## [1.3.14](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.13...v1.3.14) (2025-11-10)
+
+
+### Bug Fixes
+
+* rollback prettier-plugin to eslint ([e8c5fa5](https://github.com/kirilenko/eslint-config-k8/commit/e8c5fa5a63914b573c00795f7c9a9aa3ee99709c))
+
 ## [1.3.13](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.12...v1.3.13) (2025-11-10)
 
 
