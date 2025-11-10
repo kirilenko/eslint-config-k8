@@ -23,7 +23,6 @@ export default tsEslint.config([
       pluginReact.configs.flat['jsx-runtime'],
       pluginReactYouMightNotNeedAnEffect.configs.recommended,
       pluginReactRefresh.configs.vite,
-      pluginPrettierRecommended,
     ],
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
