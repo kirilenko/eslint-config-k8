@@ -1,7 +1,6 @@
 import eslintJs from '@eslint/js'
 import pluginHooks from 'eslint-plugin-hooks'
 import pluginImport from 'eslint-plugin-import'
-import pluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 import pluginReact from 'eslint-plugin-react'
 import pluginReactHooks from 'eslint-plugin-react-hooks'
 import pluginReactRefresh from 'eslint-plugin-react-refresh'
@@ -105,7 +104,6 @@ export default tsEslint.config([
 
       'no-void': ['error', { allowAsStatement: true }],
 
-      'prettier/prettier': ['error', { endOfLine: 'auto' }],
       /*
       Using pluginSimpleImportSort (below) instead of that:
       'import/order': [
