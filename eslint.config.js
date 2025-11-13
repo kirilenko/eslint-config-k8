@@ -122,14 +122,7 @@ export default tsEslint.config([
         { allowConstantExport: true },
       ],
       'react/display-name': 'error',
-      'react/jsx-curly-brace-presence': [
-        'error',
-        {
-          children: 'always',
-          propElementValues: 'always',
-          props: 'never',
-        },
-      ],
+      'react/jsx-curly-brace-presence': 'off',
       'testing-library/await-async-events': ['off'],
     },
     settings: {
