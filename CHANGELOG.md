@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.15...v1.4.0) (2025-12-21)
+
+
+### Features
+
+* remove prettier config ([13f0cb9](https://github.com/kirilenko/eslint-config-k8/commit/13f0cb99b257678adc1255bb73ad6f5ee5fbb822))
+
 ## [1.3.15](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.14...v1.3.15) (2025-11-13)
 
 
