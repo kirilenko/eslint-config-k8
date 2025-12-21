@@ -1,3 +1,10 @@
+## [1.3.15](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.14...v1.3.15) (2025-11-13)
+
+
+### Bug Fixes
+
+* disable react/jsx-curly-brace-presence ([ae0ce7b](https://github.com/kirilenko/eslint-config-k8/commit/ae0ce7b9555a832307f2c20ee988ba203f358a13))
+
 ## [1.3.14](https://github.com/kirilenko/eslint-config-k8/compare/v1.3.13...v1.3.14) (2025-11-10)
 
 
