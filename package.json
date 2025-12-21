@@ -14,7 +14,7 @@
   "type": "module",
   "main": "eslint.config.js",
   "scripts": {
-    "setup": "[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh && nvm use && pnpm i && pnpm audit",
+    "setup": "[[ -s $HOME/.nvm/nvm.sh ]] && . $HOME/.nvm/nvm.sh && nvm use && pnpm i",
     "test": "eslint test.js",
     "publish": "semantic-release"
   },
@@ -26,11 +26,9 @@
   "peerDependencies": {
     "@eslint/js": "^9.36.0",
     "eslint": "^9.36.0",
-    "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-hooks": "^0.4.3",
     "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
@@ -38,7 +36,6 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-sort-keys-fix": "^1.1.2",
     "globals": "^16.4.0",
-    "prettier": "^3.6.2",
     "typescript-eslint": "^8.45.0"
   },
   "packageManager": "pnpm@10.19.0+sha512.c9fc7236e92adf5c8af42fd5bf1612df99c2ceb62f27047032f4720b33f8eacdde311865e91c411f2774f618d82f320808ecb51718bfa82c060c4ba7c76a32b8",
