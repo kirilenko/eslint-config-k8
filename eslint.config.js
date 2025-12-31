@@ -4,7 +4,6 @@ import pluginImport from 'eslint-plugin-import'
 import pluginReact from 'eslint-plugin-react'
 import pluginReactHooks from 'eslint-plugin-react-hooks'
 import pluginReactRefresh from 'eslint-plugin-react-refresh'
-import pluginReactYouMightNotNeedAnEffect from 'eslint-plugin-react-you-might-not-need-an-effect'
 import pluginSimpleImportSort from 'eslint-plugin-simple-import-sort'
 import pluginSortKeysFix from 'eslint-plugin-sort-keys-fix'
 import globals from 'globals'
@@ -40,7 +39,6 @@ export default tsEslint.config(
     plugins: {
       import: pluginImport,
       'react-hooks': pluginReactHooks,
-      'react-you-might-not-need-an-effect': pluginReactYouMightNotNeedAnEffect,
     },
     rules: {
       ...pluginImport.configs.recommended.rules,
@@ -105,8 +103,6 @@ export default tsEslint.config(
 
       'react-hooks/exhaustive-deps': 'warn',
       'react-hooks/rules-of-hooks': 'error',
-
-      'react-you-might-not-need-an-effect/useless-use-effect': 'warn',
 
       /*
       Using pluginSimpleImportSort (below) instead of that:
