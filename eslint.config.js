@@ -10,20 +10,18 @@ import pluginSortKeysFix from 'eslint-plugin-sort-keys-fix'
 import globals from 'globals'
 import tsEslint from 'typescript-eslint'
 
-export default tsEslint.config([
+export default tsEslint.config(
   {
     ignores: ['**/dist'],
   },
+  eslintJs.configs.recommended,
+  ...tsEslint.configs.recommended,
+  pluginReactHooks.configs['recommended-latest'],
+  pluginReact.configs.flat.recommended,
+  pluginReact.configs.flat['jsx-runtime'],
+  pluginReactYouMightNotNeedAnEffect.configs.recommended,
+  pluginReactRefresh.configs.vite,
   {
-    extends: [
-      eslintJs.configs.recommended,
-      tsEslint.configs.recommended,
-      pluginReactHooks.configs['recommended-latest'],
-      pluginReact.configs.flat.recommended,
-      pluginReact.configs.flat['jsx-runtime'],
-      pluginReactYouMightNotNeedAnEffect.configs.recommended,
-      pluginReactRefresh.configs.vite,
-    ],
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
@@ -234,5 +232,5 @@ export default tsEslint.config([
       'import/no-commonjs': 'off',
       strict: 'off',
     },
-  },
-])
+  }
+)
