@@ -1,3 +1,11 @@
+## [1.4.2](https://github.com/kirilenko/eslint-config-k8/compare/v1.4.1...v1.4.2) (2025-12-31)
+
+
+### Bug Fixes
+
+* update dependencies ([b16872b](https://github.com/kirilenko/eslint-config-k8/commit/b16872ba0df471611a87f41388bda1d0757a0a05))
+* update dependencies ([8689e88](https://github.com/kirilenko/eslint-config-k8/commit/8689e88cbd8c6a0a2008234257fcdd0b88c8dd05))
+
 ## [1.4.1](https://github.com/kirilenko/eslint-config-k8/compare/v1.4.0...v1.4.1) (2025-12-31)
 
 
