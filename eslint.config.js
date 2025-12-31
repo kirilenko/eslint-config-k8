@@ -16,10 +16,8 @@ export default tsEslint.config(
   },
   eslintJs.configs.recommended,
   ...tsEslint.configs.recommended,
-  pluginReactHooks.configs['recommended-latest'],
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat['jsx-runtime'],
-  pluginReactYouMightNotNeedAnEffect.configs.recommended,
   pluginReactRefresh.configs.vite,
   {
     files: ['**/*.{ts,tsx}'],
@@ -39,7 +37,11 @@ export default tsEslint.config(
 
   {
     files: ['**/*.{ts,tsx}'],
-    plugins: { import: pluginImport },
+    plugins: {
+      import: pluginImport,
+      'react-hooks': pluginReactHooks,
+      'react-you-might-not-need-an-effect': pluginReactYouMightNotNeedAnEffect,
+    },
     rules: {
       ...pluginImport.configs.recommended.rules,
       ...pluginImport.configs.typescript.rules,
@@ -100,6 +102,11 @@ export default tsEslint.config(
       'no-unused-vars': 'off',
 
       'no-void': ['error', { allowAsStatement: true }],
+
+      'react-hooks/exhaustive-deps': 'warn',
+      'react-hooks/rules-of-hooks': 'error',
+
+      'react-you-might-not-need-an-effect/useless-use-effect': 'warn',
 
       /*
       Using pluginSimpleImportSort (below) instead of that:
