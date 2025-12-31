@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/kirilenko/eslint-config-k8/compare/v1.4.2...v1.4.3) (2025-12-31)
+
+
+### Bug Fixes
+
+* remove eslint-plugin-react-you-might-not-need-an-effect ([c616ee7](https://github.com/kirilenko/eslint-config-k8/commit/c616ee7360bb550a7b451a9ac26a1c18514eb2fe))
+
 ## [1.4.2](https://github.com/kirilenko/eslint-config-k8/compare/v1.4.1...v1.4.2) (2025-12-31)
 
 
