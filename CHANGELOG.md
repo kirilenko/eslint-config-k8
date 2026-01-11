@@ -1,3 +1,10 @@
+## [1.4.4](https://github.com/kirilenko/eslint-config-k8/compare/v1.4.3...v1.4.4) (2026-01-11)
+
+
+### Bug Fixes
+
+* update globals to v17 ([de72201](https://github.com/kirilenko/eslint-config-k8/commit/de72201825000dde71475bd5f507de274305ce3f))
+
 ## [1.4.3](https://github.com/kirilenko/eslint-config-k8/compare/v1.4.2...v1.4.3) (2025-12-31)
 
 
