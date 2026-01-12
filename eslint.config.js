@@ -180,7 +180,7 @@ export default tsEslint.config(
     plugins: { 'simple-import-sort': pluginSimpleImportSort },
     rules: {
       'simple-import-sort/imports': (() => {
-        const internalPackages = '@/|/' // you can add more packages here like '@/|@/components/|@/utils/'
+        const internalPackages = '@/|/|@apps/|@packages/' // you can add more packages here like '@/|@/components/|@/utils/'
         const styleExtensions = '\\.style$|\\.s?css$'
 
         return [
