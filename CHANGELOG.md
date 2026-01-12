@@ -1,3 +1,10 @@
+## [1.4.5](https://github.com/kirilenko/eslint-config-k8/compare/v1.4.4...v1.4.5) (2026-01-12)
+
+
+### Bug Fixes
+
+* update paths to internal packages ([dd4ef67](https://github.com/kirilenko/eslint-config-k8/commit/dd4ef670a81fd4ad3a16b1fff5e4f24ef53eef04))
+
 ## [1.4.4](https://github.com/kirilenko/eslint-config-k8/compare/v1.4.3...v1.4.4) (2026-01-11)
 
 
