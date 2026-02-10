@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-k8",
   "version": "1.4.5",
-  "description": "ESLint v.9 Config for React App",
+  "description": "ESLint v.9/10 Config for React App",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kirilenko/eslint-config-k8.git"
@@ -24,8 +24,8 @@
     "semantic-release": "^24.2.3"
   },
   "peerDependencies": {
-    "@eslint/js": "^9.36.0",
-    "eslint": "^9.36.0",
+    "@eslint/js": ">=9.36.0",
+    "eslint": ">=9.36.0",
     "eslint-import-resolver-typescript": "^4.4.4",
     "eslint-plugin-hooks": "^0.4.3",
     "eslint-plugin-import": "^2.32.0",
