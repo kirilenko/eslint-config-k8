@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.4.5...v1.5.0) (2026-02-10)
+
+
+### Features
+
+* support ESLint 10 ([833a8eb](https://github.com/kirilenko/eslint-config-k8/commit/833a8eb8287830c0cc069229a6cbdc19af9a20f5))
+
 ## [1.4.5](https://github.com/kirilenko/eslint-config-k8/compare/v1.4.4...v1.4.5) (2026-01-12)
 
 
