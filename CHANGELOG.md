@@ -1,3 +1,10 @@
+## [1.5.1](https://github.com/kirilenko/eslint-config-k8/compare/v1.5.0...v1.5.1) (2026-05-13)
+
+
+### Bug Fixes
+
+* update eslint-plugin-simple-import-sort peer dep to ^13.0.0 ([0bc7fd2](https://github.com/kirilenko/eslint-config-k8/commit/0bc7fd2a4a657a72996706bcc3953a7fc1d9669c))
+
 # [1.5.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.4.5...v1.5.0) (2026-02-10)
 
 

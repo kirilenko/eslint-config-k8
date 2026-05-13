@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-k8",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "ESLint v.9/10 Config for React App",
   "repository": {
     "type": "git",
