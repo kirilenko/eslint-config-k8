@@ -1,3 +1,10 @@
+## [1.5.2](https://github.com/kirilenko/eslint-config-k8/compare/v1.5.1...v1.5.2) (2026-05-17)
+
+
+### Bug Fixes
+
+* move react version setting to global scope ([89f7732](https://github.com/kirilenko/eslint-config-k8/commit/89f7732161c4089d301370ab3361554b6dfb2ded))
+
 ## [1.5.1](https://github.com/kirilenko/eslint-config-k8/compare/v1.5.0...v1.5.1) (2026-05-13)
 
 
