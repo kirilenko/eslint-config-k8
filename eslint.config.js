@@ -19,6 +19,11 @@ export default tsEslint.config(
   pluginReact.configs.flat['jsx-runtime'],
   pluginReactRefresh.configs.vite,
   {
+    settings: {
+      react: { version: 'detect' },
+    },
+  },
+  {
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
@@ -28,9 +33,6 @@ export default tsEslint.config(
         tsconfigRootDir: import.meta.dirname,
       },
       sourceType: 'module',
-    },
-    settings: {
-      react: { version: 'detect' },
     },
   },
 
