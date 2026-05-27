@@ -1,3 +1,10 @@
+## [1.5.3](https://github.com/kirilenko/eslint-config-k8/compare/v1.5.2...v1.5.3) (2026-05-27)
+
+
+### Bug Fixes
+
+* **ci:** add NODE_AUTH_TOKEN for npm authentication in publish step ([e251737](https://github.com/kirilenko/eslint-config-k8/commit/e2517372ea0fb4e7c980a78b76d9bb8542ef172c))
+
 ## [1.5.2](https://github.com/kirilenko/eslint-config-k8/compare/v1.5.1...v1.5.2) (2026-05-17)
 
 
