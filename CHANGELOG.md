@@ -1,3 +1,10 @@
+## [1.5.4](https://github.com/kirilenko/eslint-config-k8/compare/v1.5.3...v1.5.4) (2026-05-27)
+
+
+### Bug Fixes
+
+* **ci:** use SSH deploy key for git push to bypass HTTPS push rejection ([094b4cf](https://github.com/kirilenko/eslint-config-k8/commit/094b4cf0bcbd79c246b4c1967ff9fc91e151dc01))
+
 ## [1.5.3](https://github.com/kirilenko/eslint-config-k8/compare/v1.5.2...v1.5.3) (2026-05-27)
 
 
