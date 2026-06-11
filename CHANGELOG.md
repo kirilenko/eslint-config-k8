@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.5.4...v1.6.0) (2026-06-11)
+
+
+### Features
+
+* replace sort-keys-fix with perfectionist/sort-objects ([209de7d](https://github.com/kirilenko/eslint-config-k8/commit/209de7d1c376f8506828c6cc94b360ab84c66813))
+
 ## [1.5.4](https://github.com/kirilenko/eslint-config-k8/compare/v1.5.3...v1.5.4) (2026-05-27)
 
 
