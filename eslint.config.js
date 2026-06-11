@@ -1,11 +1,11 @@
 import eslintJs from '@eslint/js'
 import pluginHooks from 'eslint-plugin-hooks'
 import pluginImport from 'eslint-plugin-import'
+import pluginPerfectionist from 'eslint-plugin-perfectionist'
 import pluginReact from 'eslint-plugin-react'
 import pluginReactHooks from 'eslint-plugin-react-hooks'
 import pluginReactRefresh from 'eslint-plugin-react-refresh'
 import pluginSimpleImportSort from 'eslint-plugin-simple-import-sort'
-import pluginSortKeysFix from 'eslint-plugin-sort-keys-fix'
 import globals from 'globals'
 import tsEslint from 'typescript-eslint'
 
@@ -221,9 +221,9 @@ export default tsEslint.config(
 
   {
     files: ['**/*.?(m|c)js', '**/*.{ts,tsx}'],
-    plugins: { 'sort-keys-fix': pluginSortKeysFix },
+    plugins: { perfectionist: pluginPerfectionist },
     rules: {
-      'sort-keys-fix/sort-keys-fix': 'warn',
+      'perfectionist/sort-objects': ['warn', { order: 'asc', type: 'alphabetical' }],
     },
   },
 
