@@ -1,3 +1,10 @@
+## [1.6.1](https://github.com/kirilenko/eslint-config-k8/compare/v1.6.0...v1.6.1) (2026-07-06)
+
+
+### Bug Fixes
+
+* **deps:** bump eslint-plugin-perfectionist and semantic-release ([ef1c5b9](https://github.com/kirilenko/eslint-config-k8/commit/ef1c5b97b577b3f382d4eef88060f4d2456bb7b4))
+
 # [1.6.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.5.4...v1.6.0) (2026-06-11)
 
 
