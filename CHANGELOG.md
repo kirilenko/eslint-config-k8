@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/kirilenko/eslint-config-k8/compare/v3.0.1...v3.0.2) (2026-11-09)
+
+
+### Bug Fixes
+
+* support monorepos in path restrictions and hooks ordering ([ddfbd35](https://github.com/kirilenko/eslint-config-k8/commit/ddfbd357392d876fff9d209a32992301af20463c))
+
 ## [3.0.1](https://github.com/kirilenko/eslint-config-k8/compare/v3.0.0...v3.0.1) (2026-11-09)
 
 
