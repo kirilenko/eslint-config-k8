@@ -18,11 +18,11 @@ Opinionated ESLint flat config for TypeScript React apps. Includes rules for imp
 | `globals` | `^17.0.0` |
 | `eslint-plugin-react` | `^7.37.5` |
 | `eslint-plugin-react-hooks` | `^7.1.0` |
-| `eslint-plugin-react-refresh` | `^0.4.22` |
+| `eslint-plugin-react-refresh` | `^0.4.22 \|\| ^0.5.0` |
 | `eslint-plugin-import-x` | `^4.18.1` |
 | `eslint-plugin-jsx-a11y-x` | `^0.2.0` |
 | `eslint-import-resolver-typescript` | `^4.4.4` |
-| `eslint-plugin-simple-import-sort` | `^13.0.0` |
+| `eslint-plugin-simple-import-sort` | `^13.0.0 \|\| ^14.0.0` |
 | `eslint-plugin-perfectionist` | `^5.0.0` |
 | `eslint-plugin-hooks` | `^0.4.3` |
 
