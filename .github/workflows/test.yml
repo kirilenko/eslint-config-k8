@@ -10,8 +10,12 @@ permissions:
 
 jobs:
   test:
-    name: Test
+    name: Test (ESLint ${{ matrix.eslint }})
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        eslint: [9, 10]
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
@@ -31,6 +35,10 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: Use ESLint ${{ matrix.eslint }}
+        if: matrix.eslint != 10
+        run: pnpm add -D eslint@${{ matrix.eslint }} @eslint/js@${{ matrix.eslint }}
 
       - name: Test
         run: pnpm test

@@ -1,3 +1,4 @@
+import { fixupConfigRules } from '@eslint/compat'
 import eslintJs from '@eslint/js'
 import { defineConfig } from 'eslint/config'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
@@ -22,8 +23,11 @@ export default defineConfig(
     files: ['**/*.?(m|c)js'],
     ...tsEslint.configs.disableTypeChecked,
   },
-  pluginReact.configs.flat.recommended,
-  pluginReact.configs.flat['jsx-runtime'],
+  // eslint-plugin-react still calls context methods removed in ESLint 10
+  ...fixupConfigRules([
+    pluginReact.configs.flat.recommended,
+    pluginReact.configs.flat['jsx-runtime'],
+  ]),
   pluginReactHooks.configs.flat.recommended,
   pluginJsxA11y.configs.recommended,
   pluginReactRefresh.configs.vite,

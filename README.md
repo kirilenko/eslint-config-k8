@@ -14,10 +14,10 @@ Opinionated ESLint flat config for TypeScript React apps. Includes rules for imp
 | `eslint` | `>=9.36.0` |
 | `@eslint/js` | `>=9.36.0` |
 | `typescript` | `>=4.8.4` |
-| `typescript-eslint` | `^8.45.0` |
+| `typescript-eslint` | `^8.56.0` |
 | `globals` | `^17.0.0` |
 | `eslint-plugin-react` | `^7.37.5` |
-| `eslint-plugin-react-hooks` | `^7.0.1` |
+| `eslint-plugin-react-hooks` | `^7.1.0` |
 | `eslint-plugin-react-refresh` | `^0.4.22` |
 | `eslint-plugin-import-x` | `^4.18.1` |
 | `eslint-plugin-jsx-a11y-x` | `^0.2.0` |
