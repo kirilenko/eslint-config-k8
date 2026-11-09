@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/kirilenko/eslint-config-k8/compare/v3.0.2...v3.0.3) (2026-11-09)
+
+
+### Bug Fixes
+
+* support ESLint 10 ([293f8c7](https://github.com/kirilenko/eslint-config-k8/commit/293f8c77ad46d8e7137d8d4ef0f393ced4020338))
+
 ## [3.0.2](https://github.com/kirilenko/eslint-config-k8/compare/v3.0.1...v3.0.2) (2026-11-09)
 
 
