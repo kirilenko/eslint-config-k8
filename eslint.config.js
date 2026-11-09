@@ -125,23 +125,30 @@ export default defineConfig(
         '.(jpg|png|gif|svg|html|txt|md|woff|woff2|ttf|eot)$',
       ],
       'import-x/resolver-next': [
-        createTypeScriptImportResolver({ alwaysTryTypes: true }),
+        // Monorepo packages (e.g. packages/ui) keep their own path aliases; the nearest tsconfig wins per file
+        createTypeScriptImportResolver({
+          alwaysTryTypes: true,
+          noWarnOnMultipleProjects: true,
+          project: ['tsconfig.json', '*/tsconfig.json', '*/*/tsconfig.json'],
+        }),
       ],
     },
   },
 
   {
-    files: ['./src/lib/**/*.{ts,tsx}'],
+    files: ['**/src/lib/**/*.{ts,tsx}'],
     plugins: { 'import-x': pluginImportX },
     rules: {
+      // Absolute globs match at any depth regardless of cwd, so every package of a monorepo is covered
       'import-x/no-restricted-paths': [
         'error',
         {
           zones: [
             {
-              from: './src/modules',
+              except: ['/**/node_modules/**'],
+              from: '/**/src/modules/**',
               message: 'Lib should not depend on modules.',
-              target: './src/lib',
+              target: '/**/src/lib/**',
             },
           ],
         },
@@ -150,7 +157,7 @@ export default defineConfig(
   },
 
   {
-    files: ['./src/**/*.{ts,tsx}'],
+    files: ['**/src/**/*.{ts,tsx}'],
     plugins: { hooks: pluginHooks },
     rules: {
       'hooks/sort': [

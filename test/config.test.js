@@ -12,6 +12,8 @@ const expected = {
   'src/eqeqeq.ts': ['eqeqeq'],
   'src/floating-promise.ts': ['@typescript-eslint/no-floating-promises'],
   'src/hooks-order.tsx': ['hooks/sort'],
+  'packages/ui/src/hooks-order.tsx': ['hooks/sort'],
+  'packages/ui/src/lib/restricted.ts': ['import-x/no-restricted-paths'],
   'src/lib/restricted.ts': ['import-x/no-restricted-paths'],
   'src/set-state-in-effect.tsx': ['react-hooks/set-state-in-effect'],
   'src/sort-objects.ts': ['perfectionist/sort-objects'],
@@ -19,7 +21,7 @@ const expected = {
   'src/type-imports.ts': ['@typescript-eslint/consistent-type-imports'],
 }
 
-// import-x/no-restricted-paths resolves zones against process.cwd(), as when run from a project root
+// Run from the fixture root like the CLI does: the import resolver looks up tsconfigs from process.cwd()
 process.chdir(cwd)
 
 const results = await new ESLint({ cwd }).lintFiles(['.'])
