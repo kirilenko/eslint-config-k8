@@ -2,6 +2,7 @@ import eslintJs from '@eslint/js'
 import { defineConfig } from 'eslint/config'
 import pluginHooks from 'eslint-plugin-hooks'
 import pluginImport from 'eslint-plugin-import'
+import pluginJsxA11y from 'eslint-plugin-jsx-a11y-x'
 import pluginPerfectionist from 'eslint-plugin-perfectionist'
 import pluginReact from 'eslint-plugin-react'
 import pluginReactHooks from 'eslint-plugin-react-hooks'
@@ -23,6 +24,7 @@ export default defineConfig(
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat['jsx-runtime'],
   pluginReactHooks.configs.flat.recommended,
+  pluginJsxA11y.configs.recommended,
   pluginReactRefresh.configs.vite,
   {
     settings: {
