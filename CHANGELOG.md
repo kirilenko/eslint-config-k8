@@ -1,3 +1,13 @@
+# [4.0.0](https://github.com/kirilenko/eslint-config-k8/compare/v3.0.4...v4.0.0) (2026-11-09)
+
+
+* feat!: switch from eslint-plugin-react to @eslint-react/eslint-plugin ([2d17245](https://github.com/kirilenko/eslint-config-k8/commit/2d17245bbfd84cb87d5cf9f5c0d908626eae20e3))
+
+
+### BREAKING CHANGES
+
+* replace eslint-plugin-react with @eslint-react/eslint-plugin; react/* rule overrides no longer apply
+
 ## [3.0.4](https://github.com/kirilenko/eslint-config-k8/compare/v3.0.3...v3.0.4) (2026-11-09)
 
 
