@@ -1,3 +1,10 @@
+## [3.0.4](https://github.com/kirilenko/eslint-config-k8/compare/v3.0.3...v3.0.4) (2026-11-09)
+
+
+### Bug Fixes
+
+* **deps:** widen react-refresh and simple-import-sort peer ranges ([ba59f6a](https://github.com/kirilenko/eslint-config-k8/commit/ba59f6a71d209ba5ee8d2d2ef6f7b20eddb8d31e))
+
 ## [3.0.3](https://github.com/kirilenko/eslint-config-k8/compare/v3.0.2...v3.0.3) (2026-11-09)
 
 
