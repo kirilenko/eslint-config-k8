@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.6.3...v1.7.0) (2026-11-09)
+
+
+### Features
+
+* enable type-checked and react-hooks recommended presets ([3bf49dd](https://github.com/kirilenko/eslint-config-k8/commit/3bf49ddd34619fc452e2da0eb5a6e56809d55fb7))
+
 ## [1.6.3](https://github.com/kirilenko/eslint-config-k8/compare/v1.6.2...v1.6.3) (2026-11-09)
 
 
