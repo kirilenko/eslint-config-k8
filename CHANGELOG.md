@@ -1,3 +1,10 @@
+## [1.6.3](https://github.com/kirilenko/eslint-config-k8/compare/v1.6.2...v1.6.3) (2026-11-09)
+
+
+### Bug Fixes
+
+* **ci:** update npm for trusted publishing ([ae87de9](https://github.com/kirilenko/eslint-config-k8/commit/ae87de9a0427cf561bc01ca85f247dd15ae22683))
+
 ## [1.6.2](https://github.com/kirilenko/eslint-config-k8/compare/v1.6.1...v1.6.2) (2026-11-09)
 
 
