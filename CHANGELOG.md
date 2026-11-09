@@ -1,3 +1,13 @@
+# [2.0.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.8.0...v2.0.0) (2026-11-09)
+
+
+* feat!: add jsx-a11y-x accessibility rules ([540e17c](https://github.com/kirilenko/eslint-config-k8/commit/540e17cacfd59547d237071090e7eb65740d47ef))
+
+
+### BREAKING CHANGES
+
+* install eslint-plugin-jsx-a11y-x peer dependency
+
 # [1.8.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.7.0...v1.8.0) (2026-11-09)
 
 
