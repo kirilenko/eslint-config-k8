@@ -1,4 +1,4 @@
-import { fixupConfigRules } from '@eslint/compat'
+import pluginEslintReact from '@eslint-react/eslint-plugin'
 import eslintJs from '@eslint/js'
 import { defineConfig } from 'eslint/config'
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
@@ -6,12 +6,18 @@ import pluginHooks from 'eslint-plugin-hooks'
 import pluginImportX from 'eslint-plugin-import-x'
 import pluginJsxA11y from 'eslint-plugin-jsx-a11y-x'
 import pluginPerfectionist from 'eslint-plugin-perfectionist'
-import pluginReact from 'eslint-plugin-react'
 import pluginReactHooks from 'eslint-plugin-react-hooks'
 import pluginReactRefresh from 'eslint-plugin-react-refresh'
 import pluginSimpleImportSort from 'eslint-plugin-simple-import-sort'
 import globals from 'globals'
 import tsEslint from 'typescript-eslint'
+
+const eslintReactRecommended = pluginEslintReact.configs['recommended-type-checked']
+
+// @eslint-react ports the hooks rules; the official eslint-plugin-react-hooks keeps them instead
+const eslintReactHooksDuplicates = Object.keys(eslintReactRecommended.rules)
+  .filter((rule) => rule.replace('@eslint-react/', '') in pluginReactHooks.rules)
+  .map((rule) => [rule, 'off'])
 
 export default defineConfig(
   {
@@ -23,19 +29,17 @@ export default defineConfig(
     files: ['**/*.?(m|c)js'],
     ...tsEslint.configs.disableTypeChecked,
   },
-  // eslint-plugin-react still calls context methods removed in ESLint 10
-  ...fixupConfigRules([
-    pluginReact.configs.flat.recommended,
-    pluginReact.configs.flat['jsx-runtime'],
-  ]),
+  eslintReactRecommended,
+  {
+    files: ['**/*.?(m|c)js'],
+    ...pluginEslintReact.configs['disable-type-checked'],
+  },
+  {
+    rules: Object.fromEntries(eslintReactHooksDuplicates),
+  },
   pluginReactHooks.configs.flat.recommended,
   pluginJsxA11y.configs.recommended,
   pluginReactRefresh.configs.vite,
-  {
-    settings: {
-      react: { version: 'detect' },
-    },
-  },
   {
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
@@ -55,6 +59,8 @@ export default defineConfig(
     rules: {
       ...pluginImportX.flatConfigs.recommended.rules,
       ...pluginImportX.flatConfigs.typescript.rules,
+      '@eslint-react/no-missing-component-display-name': 'error',
+      '@eslint-react/no-use-context': 'off',
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/no-empty-object-type': 'off',
       '@typescript-eslint/no-floating-promises': [
@@ -117,8 +123,6 @@ export default defineConfig(
         'warn',
         { allowConstantExport: true },
       ],
-      'react/display-name': 'error',
-      'react/jsx-curly-brace-presence': 'off',
     },
     settings: {
       'import-x/external-module-folders': ['node_modules', '.pnpm-store'],

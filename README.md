@@ -16,7 +16,7 @@ Opinionated ESLint flat config for TypeScript React apps. Includes rules for imp
 | `typescript` | `>=4.8.4` |
 | `typescript-eslint` | `^8.56.0` |
 | `globals` | `^17.0.0` |
-| `eslint-plugin-react` | `^7.37.5` |
+| `@eslint-react/eslint-plugin` | `^5.28.8` |
 | `eslint-plugin-react-hooks` | `^7.1.0` |
 | `eslint-plugin-react-refresh` | `^0.4.22 \|\| ^0.5.0` |
 | `eslint-plugin-import-x` | `^4.18.1` |
@@ -37,7 +37,7 @@ pnpm add -D eslint-config-k8 \
   typescript \
   typescript-eslint \
   globals \
-  eslint-plugin-react \
+  @eslint-react/eslint-plugin \
   eslint-plugin-react-hooks \
   eslint-plugin-react-refresh \
   eslint-plugin-import-x \
@@ -79,7 +79,7 @@ export default defineConfig([
 ### What's included
 
 - **TypeScript** — type-checked rules via `typescript-eslint` (`no-unsafe-*`, `no-floating-promises`, `prefer-nullish-coalescing`, `consistent-type-imports`, etc.)
-- **React** — recommended rules + JSX runtime + react-refresh + `react-hooks` recommended (including React Compiler rules)
+- **React** — `@eslint-react` recommended type-checked rules + react-refresh + `react-hooks` recommended (including React Compiler rules)
 - **Accessibility** — recommended rules via `eslint-plugin-jsx-a11y-x` (prefixed `jsx-a11y-x/`)
 - **Imports** — sorted and grouped via `eslint-plugin-simple-import-sort` and `eslint-plugin-import-x`
 - **Hooks ordering** — enforced call order via `eslint-plugin-hooks`
