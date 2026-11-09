@@ -1,7 +1,8 @@
 import eslintJs from '@eslint/js'
 import { defineConfig } from 'eslint/config'
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
 import pluginHooks from 'eslint-plugin-hooks'
-import pluginImport from 'eslint-plugin-import'
+import pluginImportX from 'eslint-plugin-import-x'
 import pluginJsxA11y from 'eslint-plugin-jsx-a11y-x'
 import pluginPerfectionist from 'eslint-plugin-perfectionist'
 import pluginReact from 'eslint-plugin-react'
@@ -46,10 +47,10 @@ export default defineConfig(
 
   {
     files: ['**/*.{ts,tsx}'],
-    plugins: { import: pluginImport },
+    plugins: { 'import-x': pluginImportX },
     rules: {
-      ...pluginImport.configs.recommended.rules,
-      ...pluginImport.configs.typescript.rules,
+      ...pluginImportX.flatConfigs.recommended.rules,
+      ...pluginImportX.flatConfigs.typescript.rules,
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/no-empty-object-type': 'off',
       '@typescript-eslint/no-floating-promises': [
@@ -77,19 +78,19 @@ export default defineConfig(
 
       eqeqeq: ['error', 'smart'],
 
-      'import/newline-after-import': 'error',
+      'import-x/newline-after-import': 'error',
 
-      'import/no-amd': 'error',
+      'import-x/no-amd': 'error',
 
-      'import/no-commonjs': 'error',
+      'import-x/no-commonjs': 'error',
 
-      'import/no-dynamic-require': 'error',
+      'import-x/no-dynamic-require': 'error',
 
-      'import/no-extraneous-dependencies': 'error',
+      'import-x/no-extraneous-dependencies': 'error',
 
-      'import/no-unresolved': 'off',
+      'import-x/no-unresolved': 'off',
 
-      'import/no-useless-path-segments': 'error',
+      'import-x/no-useless-path-segments': 'error',
 
       'no-console': ['error', { allow: ['error'] }],
 
@@ -99,7 +100,7 @@ export default defineConfig(
 
       /*
       Using pluginSimpleImportSort (below) instead of that:
-      'import/order': [
+      'import-x/order': [
         'error',
         {
           alphabetize: { caseInsensitive: true, order: 'asc' },
@@ -116,22 +117,24 @@ export default defineConfig(
       'react/jsx-curly-brace-presence': 'off',
     },
     settings: {
-      'import/external-module-folders': ['node_modules', '.pnpm-store'],
-      'import/ignore': [
+      'import-x/external-module-folders': ['node_modules', '.pnpm-store'],
+      'import-x/ignore': [
         'node_modules',
         '.json$',
         '.(css|scss)$',
         '.(jpg|png|gif|svg|html|txt|md|woff|woff2|ttf|eot)$',
       ],
-      'import/resolver': { typescript: { alwaysTryTypes: true } },
+      'import-x/resolver-next': [
+        createTypeScriptImportResolver({ alwaysTryTypes: true }),
+      ],
     },
   },
 
   {
     files: ['./src/lib/**/*.{ts,tsx}'],
-    plugins: { import: pluginImport },
+    plugins: { 'import-x': pluginImportX },
     rules: {
-      'import/no-restricted-paths': [
+      'import-x/no-restricted-paths': [
         'error',
         {
           zones: [
@@ -223,7 +226,7 @@ export default defineConfig(
       '@typescript-eslint/no-unsafe-assignment': 'off',
       '@typescript-eslint/no-unsafe-member-access': 'off',
       '@typescript-eslint/prefer-nullish-coalescing': 'off',
-      'import/no-commonjs': 'off',
+      'import-x/no-commonjs': 'off',
       strict: 'off',
     },
   }
