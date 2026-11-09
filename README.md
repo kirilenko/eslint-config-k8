@@ -26,6 +26,8 @@ Opinionated ESLint flat config for TypeScript React apps. Includes rules for imp
 
 ### Installation
 
+Requires `typescript` and a `tsconfig.json` in the project: TypeScript rules are type-aware.
+
 ```bash
 pnpm add -D eslint-config-k8 \
   eslint \
