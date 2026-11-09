@@ -74,8 +74,8 @@ export default defineConfig([
 
 ### What's included
 
-- **TypeScript** — strict rules via `typescript-eslint` (`no-unsafe-*`, `no-floating-promises`, `prefer-nullish-coalescing`, etc.)
-- **React** — recommended rules + JSX runtime + react-refresh
+- **TypeScript** — type-checked rules via `typescript-eslint` (`no-unsafe-*`, `no-floating-promises`, `prefer-nullish-coalescing`, `consistent-type-imports`, etc.)
+- **React** — recommended rules + JSX runtime + react-refresh + `react-hooks` recommended (including React Compiler rules)
 - **Imports** — sorted and grouped via `eslint-plugin-simple-import-sort` and `eslint-plugin-import`
 - **Hooks ordering** — enforced call order via `eslint-plugin-hooks`
 - **Object sorting** — alphabetical key order via `eslint-plugin-perfectionist`

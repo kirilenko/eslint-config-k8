@@ -1,4 +1,5 @@
 import eslintJs from '@eslint/js'
+import { defineConfig } from 'eslint/config'
 import pluginHooks from 'eslint-plugin-hooks'
 import pluginImport from 'eslint-plugin-import'
 import pluginPerfectionist from 'eslint-plugin-perfectionist'
@@ -9,14 +10,19 @@ import pluginSimpleImportSort from 'eslint-plugin-simple-import-sort'
 import globals from 'globals'
 import tsEslint from 'typescript-eslint'
 
-export default tsEslint.config(
+export default defineConfig(
   {
     ignores: ['**/dist'],
   },
   eslintJs.configs.recommended,
-  ...tsEslint.configs.recommended,
+  ...tsEslint.configs.recommendedTypeChecked,
+  {
+    files: ['**/*.?(m|c)js'],
+    ...tsEslint.configs.disableTypeChecked,
+  },
   pluginReact.configs.flat.recommended,
   pluginReact.configs.flat['jsx-runtime'],
+  pluginReactHooks.configs.flat.recommended,
   pluginReactRefresh.configs.vite,
   {
     settings: {
@@ -26,7 +32,7 @@ export default tsEslint.config(
   {
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
-      ecmaVersion: 2020,
+      ecmaVersion: 'latest',
       globals: globals.browser,
       parserOptions: {
         projectService: true,
@@ -38,17 +44,12 @@ export default tsEslint.config(
 
   {
     files: ['**/*.{ts,tsx}'],
-    plugins: {
-      import: pluginImport,
-      'react-hooks': pluginReactHooks,
-    },
+    plugins: { import: pluginImport },
     rules: {
       ...pluginImport.configs.recommended.rules,
       ...pluginImport.configs.typescript.rules,
-      '@typescript-eslint/ban-ts-comment': 'error',
-      '@typescript-eslint/no-base-to-string': 'error',
+      '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/no-empty-object-type': 'off',
-      '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/no-floating-promises': [
         'error',
         { ignoreVoid: true },
@@ -63,25 +64,11 @@ export default tsEslint.config(
         },
       ],
 
-      '@typescript-eslint/no-unsafe-argument': 'error',
-
-      '@typescript-eslint/no-unsafe-assignment': 'error',
-
-      '@typescript-eslint/no-unsafe-call': 'error',
-
-      '@typescript-eslint/no-unsafe-enum-comparison': 'error',
-
-      '@typescript-eslint/no-unsafe-member-access': 'error',
-
-      '@typescript-eslint/no-unsafe-return': 'error',
-
-      '@typescript-eslint/only-throw-error': 'error',
-
       '@typescript-eslint/prefer-nullish-coalescing': 'error',
 
-      '@typescript-eslint/prefer-promise-reject-errors': 'error',
-
       '@typescript-eslint/unbound-method': 'off',
+
+      eqeqeq: ['error', 'smart'],
 
       'import/newline-after-import': 'error',
 
@@ -93,7 +80,7 @@ export default tsEslint.config(
 
       'import/no-extraneous-dependencies': 'error',
 
-      'import/no-unresolved': ['off', { zones: [{ from: '/' }] }],
+      'import/no-unresolved': 'off',
 
       'import/no-useless-path-segments': 'error',
 
@@ -102,9 +89,6 @@ export default tsEslint.config(
       'no-unused-vars': 'off',
 
       'no-void': ['error', { allowAsStatement: true }],
-
-      'react-hooks/exhaustive-deps': 'warn',
-      'react-hooks/rules-of-hooks': 'error',
 
       /*
       Using pluginSimpleImportSort (below) instead of that:
@@ -123,7 +107,6 @@ export default tsEslint.config(
       ],
       'react/display-name': 'error',
       'react/jsx-curly-brace-presence': 'off',
-      'testing-library/await-async-events': ['off'],
     },
     settings: {
       'import/external-module-folders': ['node_modules', '.pnpm-store'],
@@ -232,7 +215,6 @@ export default tsEslint.config(
     rules: {
       '@typescript-eslint/no-unsafe-assignment': 'off',
       '@typescript-eslint/no-unsafe-member-access': 'off',
-      '@typescript-eslint/no-unsafe-spread': 'off',
       '@typescript-eslint/prefer-nullish-coalescing': 'off',
       'import/no-commonjs': 'off',
       strict: 'off',
