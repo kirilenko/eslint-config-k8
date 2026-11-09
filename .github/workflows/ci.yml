@@ -44,6 +44,10 @@ jobs:
           cache: pnpm
           node-version-file: '.nvmrc'
 
+      # Trusted publishing (OIDC) requires npm >= 11.5.1
+      - name: Update npm
+        run: npm install -g npm@11
+
       - name: Get pnpm store directory
         id: pnpm-cache
         shell: bash
