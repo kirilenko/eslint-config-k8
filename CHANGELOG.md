@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.7.0...v1.8.0) (2026-11-09)
+
+
+### Features
+
+* enable switch-exhaustiveness-check ([7b57e28](https://github.com/kirilenko/eslint-config-k8/commit/7b57e287a254cdc06f4b2a5f868389b98369a726))
+
 # [1.7.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.6.3...v1.7.0) (2026-11-09)
 
 
