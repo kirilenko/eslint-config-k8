@@ -1,3 +1,13 @@
+# [3.0.0](https://github.com/kirilenko/eslint-config-k8/compare/v2.0.0...v3.0.0) (2026-11-09)
+
+
+* feat!: switch from eslint-plugin-import to eslint-plugin-import-x ([9e03bba](https://github.com/kirilenko/eslint-config-k8/commit/9e03bba5e749a537ee3109e39b217e1dbd59b295))
+
+
+### BREAKING CHANGES
+
+* replace eslint-plugin-import with eslint-plugin-import-x; rename import/* rule overrides to import-x/*
+
 # [2.0.0](https://github.com/kirilenko/eslint-config-k8/compare/v1.8.0...v2.0.0) (2026-11-09)
 
 
