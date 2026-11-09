@@ -222,6 +222,7 @@ export default defineConfig(
 
   {
     files: ['**/*.?(m|c)js', '**/vite.config.ts', '**/vitest.config.ts'],
+    languageOptions: { globals: globals.node },
     rules: {
       '@typescript-eslint/no-unsafe-assignment': 'off',
       '@typescript-eslint/no-unsafe-member-access': 'off',

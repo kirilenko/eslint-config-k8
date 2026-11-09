@@ -13,6 +13,7 @@ Opinionated ESLint flat config for TypeScript React apps. Includes rules for imp
 | --- | --- |
 | `eslint` | `>=9.36.0` |
 | `@eslint/js` | `>=9.36.0` |
+| `typescript` | `>=4.8.4` |
 | `typescript-eslint` | `^8.45.0` |
 | `globals` | `^17.0.0` |
 | `eslint-plugin-react` | `^7.37.5` |
@@ -27,12 +28,13 @@ Opinionated ESLint flat config for TypeScript React apps. Includes rules for imp
 
 ### Installation
 
-Requires `typescript` and a `tsconfig.json` in the project: TypeScript rules are type-aware.
+Requires a `tsconfig.json` in the project: TypeScript rules are type-aware.
 
 ```bash
 pnpm add -D eslint-config-k8 \
   eslint \
   @eslint/js \
+  typescript \
   typescript-eslint \
   globals \
   eslint-plugin-react \
