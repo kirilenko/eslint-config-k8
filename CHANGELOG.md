@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/kirilenko/eslint-config-k8/compare/v3.0.0...v3.0.1) (2026-11-09)
+
+
+### Bug Fixes
+
+* add node globals for JS files, typescript peer, and limit published files ([f69792c](https://github.com/kirilenko/eslint-config-k8/commit/f69792cbed7c14a179280244082ee8dc062290f5))
+
 # [3.0.0](https://github.com/kirilenko/eslint-config-k8/compare/v2.0.0...v3.0.0) (2026-11-09)
 
 
